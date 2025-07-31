@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "public": "Inicial",
+    "public": "AF Glasses",
     "ignore": [
       "firebase.json",
       "**/.*",
