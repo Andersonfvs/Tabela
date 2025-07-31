@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "public": "AF Glasses",
+    "public": ".",
     "ignore": [
       "firebase.json",
       "**/.*",
@@ -9,7 +9,7 @@
     "rewrites": [
       {
         "source": "**",
-        "destination": "/Inicial.html"
+        "destination": "/inicial.html"
       }
     ]
   }
