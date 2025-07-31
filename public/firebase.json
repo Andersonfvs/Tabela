@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "y": ".",
+    "public": "public",
     "ignore": [
       "**/.*",
       "**/node_modules/**"
