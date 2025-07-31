@@ -1,7 +1,6 @@
 {
   "hosting": {
-    "public": "y",
-    "ignore": [
+    "public": "Inicial", 
       "firebase.json",
       "**/.*",
       "**/node_modules/**"
@@ -9,7 +8,7 @@
     "rewrites": [
       {
         "source": "**",
-        "destination": "/index.html"
+        "destination": "/Inicial.html"
       }
     ]
   }
