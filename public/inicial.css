@@ -15,7 +15,7 @@ body {
   border-radius: 12px;
   margin-bottom: 40px;
   box-shadow: 0 0 12px rgba(97, 196, 191, 0.15);
-  position: relative; /* ponto de referência para posicionar logo+slogan */
+  position: relative;
 }
 
 /* Container de conteúdo do cabeçalho */
@@ -28,18 +28,17 @@ body {
   justify-content: center;
 }
 
-/* === GRUPO: logo + slogan (flutuante) === */
+/* === GRUPO: logo + slogan === */
 .grupo-logo-slogan {
-  position: absolute;     /* permite mover sem afetar o texto */
-  top: 10px;              /* ajuste conforme necessário */
-  left: 100px;             /* ajuste conforme necessário */
+  position: absolute;
+  top: 10px;
+  left: 100px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   z-index: 2;
 }
 
-/* Logo */
 .apresentacao-logo {
   margin-top: 0;
 }
@@ -51,7 +50,6 @@ body {
   filter: drop-shadow(2px 2px 4px rgba(90, 199, 199, 0.3));
 }
 
-/* Slogan */
 .apresentacao-slogan {
   font-size: 16px;
   color: #6adcc4;
@@ -117,6 +115,10 @@ h1, .topo {
   margin: 40px auto 20px;
 }
 
+.tabela-container {
+  overflow-x: auto;
+}
+
 table {
   border-collapse: collapse;
   width: 80%;
@@ -125,6 +127,7 @@ table {
   box-shadow: 0 0 10px rgba(97, 196, 191, 0.3);
   border-radius: 6px;
   overflow: hidden;
+  min-width: 600px;
 }
 
 td, th {
@@ -179,4 +182,28 @@ tr:hover {
 
 .whatsapp-button img:hover {
   transform: scale(1.1);
+}
+
+/* === Responsividade === */
+@media (max-width: 768px) {
+  .apresentacao-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .grupo-logo-slogan {
+    position: static;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  .apresentacao-texto {
+    left: 0;
+    margin-top: 20px;
+  }
+
+  table {
+    width: 100%;
+    min-width: unset;
+  }
 }
