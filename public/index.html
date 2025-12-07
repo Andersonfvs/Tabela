@@ -6,182 +6,317 @@
   <title>Clarzo - Mais que lentes, clareza de vida</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="inicial.css" />
 </head>
 <body>
 
+  <!-- Background Particles -->
+  <div class="particles"></div>
+
   <!-- Hero Section -->
-  <section class="hero">
+  <section class="hero" id="inicio">
     <div class="hero-content">
-      <div class="logo-container">
-        <img src="clarzosemfundo.png" alt="Logo Clarzo" />
+      <div class="logo-wrapper">
+        <img src="clarzosemfundo.png" alt="Logo Clarzo" class="hero-logo" />
+        <div class="logo-glow"></div>
       </div>
-      <p class="tagline">Mais que lentes, clareza de vida.</p>
       
-      <h1>Bem-vindo à Clarzo</h1>
+      <h1 class="hero-title">
+        <span class="gradient-text">Clarzo</span>
+      </h1>
       
-      <div class="hero-text">
-        <p>
-          A <strong>Clarzo</strong> nasceu para transformar a forma como as pessoas enxergam o mundo — com simplicidade, design acessível e lentes de alta qualidade.
-        </p>
-        <p>
-          Em um mercado onde visão virou luxo, a Clarzo traz <strong>clareza com propósito</strong>, com um atendimento próximo e transparente. Enxergar bem nunca foi tão fácil.
-        </p>
+      <p class="hero-subtitle">Mais que lentes, clareza de vida.</p>
+      
+      <p class="hero-description">
+        Transformando a forma como você enxerga o mundo.<br/>
+        Design acessível. Qualidade premium. Atendimento transparente.
+      </p>
+
+      <div class="hero-cta">
+        <a href="https://wa.me/5551994286964" class="btn-primary">
+          <span>Agendar Consulta</span>
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+            <path d="M4 10h12m0 0l-6-6m6 6l-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+        </a>
+        <a href="#lentes" class="btn-secondary">
+          <span>Conhecer Lentes</span>
+        </a>
       </div>
 
-      <div class="cta-buttons">
-        <a href="https://wa.me/5551994286964" class="btn btn-primary">
-          <span>Faça seu orçamento</span>
-        </a>
-        <a href="#tabela-precos" class="btn btn-secondary">
-          <span>Ver preços</span>
-        </a>
+      <div class="scroll-indicator">
+        <div class="mouse">
+          <div class="wheel"></div>
+        </div>
+        <p>Role para explorar</p>
       </div>
     </div>
   </section>
 
-  <!-- Seção de Tabela -->
-  <section class="pricing-section" id="tabela-precos">
+  <!-- Features Section -->
+  <section class="features" id="diferenciais">
     <div class="container">
       <div class="section-header">
-        <h2>Tabela de Preços</h2>
-        <p>Lentes prontas com qualidade e preço justo</p>
+        <span class="section-label">Por que Clarzo?</span>
+        <h2>Visão sem complicação</h2>
       </div>
 
-      <div class="tabela-wrapper">
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+              <circle cx="20" cy="20" r="18" stroke="#5ac7c7" stroke-width="2"/>
+              <path d="M15 20l4 4 8-8" stroke="#5ac7c7" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3>Qualidade Garantida</h3>
+          <p>Lentes de alta performance com tratamentos modernos e durabilidade superior.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+              <rect x="8" y="10" width="24" height="20" rx="2" stroke="#5ac7c7" stroke-width="2"/>
+              <path d="M15 20h10M20 15v10" stroke="#5ac7c7" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3>Preços Transparentes</h3>
+          <p>Sem surpresas. Valor justo com todas as informações claras desde o início.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+              <circle cx="20" cy="15" r="5" stroke="#5ac7c7" stroke-width="2"/>
+              <path d="M12 30c0-4.4 3.6-8 8-8s8 3.6 8 8" stroke="#5ac7c7" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3>Atendimento Próximo</h3>
+          <p>Cada cliente é único. Atendimento personalizado e consultoria especializada.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Lens Categories -->
+  <section class="lens-categories" id="lentes">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Nossas Opções</span>
+        <h2>Encontre a lente ideal</h2>
+      </div>
+
+      <div class="categories-grid">
+        <div class="category-card">
+          <div class="category-badge">Mais Popular</div>
+          <h3>Lentes com Antirreflexo</h3>
+          <p>Reduza reflexos e melhore a nitidez em qualquer ambiente</p>
+          <div class="category-price">A partir de <strong>R$ 190</strong></div>
+          <ul class="category-features">
+            <li>✓ Tratamento AR Verde ou Azul</li>
+            <li>✓ Redução de fadiga visual</li>
+            <li>✓ Ideal para telas</li>
+          </ul>
+        </div>
+
+        <div class="category-card featured">
+          <div class="category-badge premium">Premium</div>
+          <h3>Lentes Fotossensíveis</h3>
+          <p>Adaptação automática à luz - conforto total</p>
+          <div class="category-price">A partir de <strong>R$ 300</strong></div>
+          <ul class="category-features">
+            <li>✓ Escurecem no sol</li>
+            <li>✓ Clareiam em ambientes internos</li>
+            <li>✓ Proteção UV total</li>
+          </ul>
+        </div>
+
+        <div class="category-card">
+          <div class="category-badge">Essencial</div>
+          <h3>Lentes Orgânicas</h3>
+          <p>Leveza e resistência para o dia a dia</p>
+          <div class="category-price">A partir de <strong>R$ 110</strong></div>
+          <ul class="category-features">
+            <li>✓ Leves e confortáveis</li>
+            <li>✓ Resistentes a impactos</li>
+            <li>✓ Excelente custo-benefício</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing Table -->
+  <section class="pricing-section" id="precos">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Tabela Completa</span>
+        <h2>Preços e Especificações</h2>
+        <p>Todos os valores incluem montagem na armação</p>
+      </div>
+
+      <div class="table-wrapper">
         <table class="pricing-table">
           <thead>
             <tr>
               <th>Material</th>
-              <th>Grau/Esf./Cil.</th>
+              <th>Grau (Esf./Cil.)</th>
               <th>Tratamento</th>
-              <th class="price-col">Valor com Montagem</th>
+              <th class="price-col">Valor Final</th>
             </tr>
           </thead>
           <tbody>
             <tr>
               <td data-label="Material">1.49 Orgânica incolor</td>
-              <td data-label="Grau">+6.00 à -6.00/ até -2.00</td>
-              <td data-label="Tratamento">-</td>
+              <td data-label="Grau">+6.00 à -6.00 / até -2.00</td>
+              <td data-label="Tratamento"><span class="badge">Sem tratamento</span></td>
               <td data-label="Valor" class="price">R$ 110,00</td>
             </tr>
             <tr>
-              <td data-label="Material">1.49 Orgânica incolor Antirreflexo</td>
-              <td data-label="Grau">+6.00 à -6.00/ até -2.00</td>
-              <td data-label="Tratamento">AR Verde</td>
+              <td data-label="Material">1.49 Orgânica Antirreflexo</td>
+              <td data-label="Grau">+6.00 à -6.00 / até -2.00</td>
+              <td data-label="Tratamento"><span class="badge badge-green">AR Verde</span></td>
               <td data-label="Valor" class="price">R$ 190,00</td>
             </tr>
             <tr>
-              <td data-label="Material">1.49 Orgânica incolor Antirreflexo</td>
-              <td data-label="Grau">+6.00 à -6.00/ -2.25 à -4.00</td>
-              <td data-label="Tratamento">AR Verde</td>
+              <td data-label="Material">1.49 Orgânica Antirreflexo</td>
+              <td data-label="Grau">+6.00 à -6.00 / -2.25 à -4.00</td>
+              <td data-label="Tratamento"><span class="badge badge-green">AR Verde</span></td>
               <td data-label="Valor" class="price">R$ 210,00</td>
             </tr>
             <tr>
-              <td data-label="Material">1.56 Orgânica TopBlue Antirreflexo</td>
-              <td data-label="Grau">+6.00 à -6.00/ até -2.00</td>
-              <td data-label="Tratamento">AR Azul/ Blue</td>
+              <td data-label="Material">1.56 Orgânica TopBlue</td>
+              <td data-label="Grau">+6.00 à -6.00 / até -2.00</td>
+              <td data-label="Tratamento"><span class="badge badge-blue">AR Azul / Blue</span></td>
               <td data-label="Valor" class="price">R$ 230,00</td>
             </tr>
             <tr>
-              <td data-label="Material">1.56 Orgânica TopBlue Antirreflexo</td>
-              <td data-label="Grau">+6.00 à -6.00/ -2.25 à -4.00</td>
-              <td data-label="Tratamento">AR Azul/ Blue</td>
+              <td data-label="Material">1.56 Orgânica TopBlue</td>
+              <td data-label="Grau">+6.00 à -6.00 / -2.25 à -4.00</td>
+              <td data-label="Tratamento"><span class="badge badge-blue">AR Azul / Blue</span></td>
               <td data-label="Valor" class="price">R$ 265,00</td>
             </tr>
-            <tr>
-              <td data-label="Material">1.56 Orgânica ACTiv (foto) Antirreflexo</td>
-              <td data-label="Grau">+4.00 à -6.00/ até -2.00</td>
-              <td data-label="Tratamento">AR Verde/ Fotossensível</td>
+            <tr class="highlight">
+              <td data-label="Material">1.56 ACTiv Fotossensível</td>
+              <td data-label="Grau">+4.00 à -6.00 / até -2.00</td>
+              <td data-label="Tratamento"><span class="badge badge-photo">AR Verde / Foto</span></td>
               <td data-label="Valor" class="price">R$ 300,00</td>
             </tr>
-            <tr>
-              <td data-label="Material">1.56 Orgânica ACTiv (foto) Antirreflexo</td>
-              <td data-label="Grau">+4.00 à -6.00/ -2.25 à -4.00</td>
-              <td data-label="Tratamento">AR Verde/ Fotossensível</td>
+            <tr class="highlight">
+              <td data-label="Material">1.56 ACTiv Fotossensível</td>
+              <td data-label="Grau">+4.00 à -6.00 / -2.25 à -4.00</td>
+              <td data-label="Tratamento"><span class="badge badge-photo">AR Verde / Foto</span></td>
               <td data-label="Valor" class="price">R$ 330,00</td>
             </tr>
-            <tr>
-              <td data-label="Material">1.56 Orgânica ACTiv (foto) TopBlue Antirreflexo</td>
-              <td data-label="Grau">+4.00 à -4.00/ até -4.00</td>
-              <td data-label="Tratamento">AR Azul/ Fotossensível</td>
+            <tr class="highlight">
+              <td data-label="Material">1.56 ACTiv TopBlue Foto</td>
+              <td data-label="Grau">+4.00 à -4.00 / até -4.00</td>
+              <td data-label="Tratamento"><span class="badge badge-photo">AR Azul / Foto</span></td>
               <td data-label="Valor" class="price">R$ 385,00</td>
             </tr>
             <tr>
               <td data-label="Material">1.59 Policarbonato incolor</td>
-              <td data-label="Grau">+4.00 à -6.00/ até -2.00</td>
-              <td data-label="Tratamento">-</td>
+              <td data-label="Grau">+4.00 à -6.00 / até -2.00</td>
+              <td data-label="Tratamento"><span class="badge">Sem tratamento</span></td>
               <td data-label="Valor" class="price">R$ 140,00</td>
             </tr>
             <tr>
               <td data-label="Material">1.59 Policarbonato incolor</td>
-              <td data-label="Grau">+6.00 à -6.00/ -2.25 à -4.00</td>
-              <td data-label="Tratamento">-</td>
+              <td data-label="Grau">+6.00 à -6.00 / -2.25 à -4.00</td>
+              <td data-label="Tratamento"><span class="badge">Sem tratamento</span></td>
               <td data-label="Valor" class="price">R$ 230,00</td>
             </tr>
             <tr>
-              <td data-label="Material">1.59 Policarbonato incolor Antirreflexo</td>
-              <td data-label="Grau">+4.00 à -6.00/ até -2.00</td>
-              <td data-label="Tratamento">AR Verde</td>
+              <td data-label="Material">1.59 Policarbonato AR</td>
+              <td data-label="Grau">+4.00 à -6.00 / até -2.00</td>
+              <td data-label="Tratamento"><span class="badge badge-green">AR Verde</span></td>
               <td data-label="Valor" class="price">R$ 250,00</td>
             </tr>
             <tr>
-              <td data-label="Material">1.59 Policarbonato incolor Antirreflexo</td>
-              <td data-label="Grau">+6.00 à -6.00/ -2.25 à -4.00</td>
-              <td data-label="Tratamento">AR Verde</td>
+              <td data-label="Material">1.59 Policarbonato AR</td>
+              <td data-label="Grau">+6.00 à -6.00 / -2.25 à -4.00</td>
+              <td data-label="Tratamento"><span class="badge badge-green">AR Verde</span></td>
               <td data-label="Valor" class="price">R$ 310,00</td>
             </tr>
             <tr>
-              <td data-label="Material">1.59 Policarbonato TopBlue Antirreflexo</td>
-              <td data-label="Grau">+4.00 à -6.00/ até -2.00</td>
-              <td data-label="Tratamento">AR Azul/ Blue</td>
+              <td data-label="Material">1.59 Policarbonato TopBlue</td>
+              <td data-label="Grau">+4.00 à -6.00 / até -2.00</td>
+              <td data-label="Tratamento"><span class="badge badge-blue">AR Azul / Blue</span></td>
               <td data-label="Valor" class="price">R$ 285,00</td>
             </tr>
             <tr>
-              <td data-label="Material">1.59 Policarbonato TopBlue Antirreflexo</td>
-              <td data-label="Grau">+6.00 à -6.00/ -2.25 à -4.00</td>
-              <td data-label="Tratamento">AR Azul/ Blue</td>
+              <td data-label="Material">1.59 Policarbonato TopBlue</td>
+              <td data-label="Grau">+6.00 à -6.00 / -2.25 à -4.00</td>
+              <td data-label="Tratamento"><span class="badge badge-blue">AR Azul / Blue</span></td>
               <td data-label="Valor" class="price">R$ 360,00</td>
             </tr>
-            <tr>
-              <td data-label="Material">1.67 Orgânica incolor Antirreflexo Hidrofóbico</td>
-              <td data-label="Grau">Plano à -12.00/ até -2.00</td>
-              <td data-label="Tratamento">AR Verde</td>
+            <tr class="premium-row">
+              <td data-label="Material">1.67 Orgânica AR Hidrofóbico</td>
+              <td data-label="Grau">Plano à -12.00 / até -2.00</td>
+              <td data-label="Tratamento"><span class="badge badge-premium">AR Verde Premium</span></td>
               <td data-label="Valor" class="price">R$ 480,00</td>
             </tr>
-            <tr>
-              <td data-label="Material">1.67 Orgânica incolor Antirreflexo Hidrofóbico</td>
-              <td data-label="Grau">Plano à -10.00/ -2.25 à -4.00</td>
-              <td data-label="Tratamento">AR Verde</td>
+            <tr class="premium-row">
+              <td data-label="Material">1.67 Orgânica AR Hidrofóbico</td>
+              <td data-label="Grau">Plano à -10.00 / -2.25 à -4.00</td>
+              <td data-label="Tratamento"><span class="badge badge-premium">AR Verde Premium</span></td>
               <td data-label="Valor" class="price">R$ 480,00</td>
             </tr>
           </tbody>
         </table>
       </div>
 
-      <div class="cta-final">
-        <p>Encontrou o que procura?</p>
-        <a href="https://wa.me/5551994286964" class="btn btn-primary">
-          <span>Solicitar orçamento personalizado</span>
+      <div class="pricing-note">
+        <p>💡 <strong>Dica:</strong> Todas as lentes incluem montagem gratuita. Consulte-nos para recomendações personalizadas baseadas no seu grau e estilo de vida.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Final -->
+  <section class="cta-section">
+    <div class="container">
+      <div class="cta-content">
+        <h2>Pronto para enxergar melhor?</h2>
+        <p>Entre em contato e receba um atendimento personalizado</p>
+        <a href="https://wa.me/5551994286964" class="btn-primary large">
+          <span>Falar com Especialista</span>
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <path d="M12 2C6.48 2 2 6.48 2 12c0 1.77.46 3.43 1.27 4.87L2 22l5.25-1.38C8.64 21.46 10.26 22 12 22c5.52 0 10-4.48 10-10S17.52 2 12 2zm5.05 14.36c-.22.62-1.3 1.18-1.79 1.23-.48.05-.93.23-3.14-.66-2.81-1.13-4.61-3.97-4.75-4.15-.14-.18-1.13-1.5-1.13-2.86s.71-2.03 1.01-2.31c.26-.24.56-.3.75-.3.19 0 .38.01.54.01.19 0 .44-.07.69.53.26.62.88 2.14.95 2.3.07.15.13.34.03.53-.1.19-.16.31-.31.48-.16.17-.33.38-.47.51-.16.15-.32.31-.14.61.19.3.83 1.38 1.79 2.23 1.24 1.1 2.28 1.44 2.6 1.6.32.17.51.14.7-.08.19-.23.81-.95 1.03-1.28.21-.33.43-.27.72-.16.29.11 1.84.87 2.16 1.03.32.15.53.23.61.36.08.13.08.73-.14 1.35z" fill="currentColor"/>
+          </svg>
         </a>
       </div>
     </div>
   </section>
 
-  <!-- Botão WhatsApp Flutuante -->
-  <a href="https://wa.me/5551994286964" target="_blank" class="whatsapp-float" aria-label="Contato WhatsApp">
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <img src="clarzosemfundo.png" alt="Clarzo" class="footer-logo" />
+          <p>Mais que lentes, clareza de vida.</p>
+        </div>
+        <div class="footer-links">
+          <a href="#inicio">Início</a>
+          <a href="#diferenciais">Diferenciais</a>
+          <a href="#lentes">Lentes</a>
+          <a href="#precos">Preços</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 Clarzo. Todos os direitos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- WhatsApp Float -->
+  <a href="https://wa.me/5551994286964" class="whatsapp-float" aria-label="WhatsApp">
     <svg viewBox="0 0 32 32" fill="currentColor">
       <path d="M16 0C7.164 0 0 7.164 0 16c0 2.828.739 5.484 2.032 7.78L0 32l8.448-2.216A15.914 15.914 0 0016 32c8.836 0 16-7.164 16-16S24.836 0 16 0zm0 29.333c-2.46 0-4.84-.675-6.893-1.947l-.493-.296-5.12 1.344 1.367-4.992-.324-.512A13.246 13.246 0 012.667 16c0-7.364 5.969-13.333 13.333-13.333S29.333 8.636 29.333 16 23.364 29.333 16 29.333z"/>
       <path d="M23.565 19.558c-.397-.199-2.349-1.159-2.714-1.291-.365-.133-.631-.199-.897.199-.266.397-1.031 1.291-1.263 1.557-.233.266-.465.299-.862.1-.398-.2-1.679-.619-3.198-1.974-1.182-1.054-1.981-2.357-2.213-2.754-.233-.398-.025-.613.175-.811.179-.179.397-.465.596-.697.199-.233.266-.398.398-.664.133-.266.067-.498-.033-.697-.1-.199-.897-2.162-1.229-2.96-.324-.776-.653-.672-.897-.684-.232-.011-.498-.013-.764-.013s-.697.099-1.062.498c-.365.398-1.394 1.362-1.394 3.324s1.427 3.855 1.626 4.121c.199.266 2.809 4.291 6.805 6.018.951.411 1.693.656 2.271.839.955.304 1.824.261 2.511.158.766-.114 2.349-.96 2.681-1.888.332-.928.332-1.724.233-1.888-.1-.165-.365-.266-.764-.465z"/>
     </svg>
   </a>
-
-  <!-- Footer -->
-  <footer class="footer">
-    <p>&copy; 2024 Clarzo. Todos os direitos reservados.</p>
-    <p>Mais que lentes, clareza de vida.</p>
-  </footer>
 
 </body>
 </html>
